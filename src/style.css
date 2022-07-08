@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
 *{                                                                 font-family: 'Sofia Pro', sans-serif;
@@ -10,4 +12,13 @@
 html {
     margin:0;
     padding:0;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
