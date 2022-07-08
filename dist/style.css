@@ -566,8 +566,21 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .top-\[-40px\] {
   top: -40px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-10 {
@@ -689,6 +702,10 @@ video {
 
 .w-4\/6 {
   width: 66.666667%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .shrink-0 {
@@ -999,6 +1016,19 @@ html {
   padding:0;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -1076,12 +1106,24 @@ html {
     width: 50%;
   }
 
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
   .lg\:basis-1\/4 {
     flex-basis: 25%;
   }
 
   .lg\:basis-2\/4 {
     flex-basis: 50%;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
+  .lg\:pl-\[25\%\] {
+    padding-left: 25%;
   }
 
   .lg\:text-center {
